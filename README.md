@@ -11,15 +11,14 @@ I wrote all of the python and C++ in this project, assembled the hardware, and t
 
 # 
 ### TAP Dancer - serial protocol converter
-The TAP Dancer alows integration serial TAP output devices to non-TAP serial inputs. It hosts a Serial TAP server, receives messages from TAP output devices, and then strips the payload from the session. That payload is then transmitted as a plain serial text string to any serial input device. One example use is for connecting a popular wander prevention system (Which only provides Serial TAP output) to send alarm notifications to a call server which accepts non-TAP serial strings.
 
-The TAP Dancer was intended to run on an Arduino Mega, however it could run on any embedded microcontroller with a C++ compiler and at least two serial ports.
+The TAP Dancer is a serial protocol converter. It hosts a Serial TAP server, which receives messages from TAP output devices.  The TAP payload is then transmitted as a plain text serial string to any serial input device. The TAP Dancer was intended to run on an Arduino Mega, however it could run on any embedded microcontroller with a C++ compiler and at least two serial ports.
 
-All memory is pre-allocated where possible. The only dynamically allocated memory is the stack. The serial data is read into 8 pre-allocated buffers, each 256 bytes long. This is sufficient to hold the vast majority of TAP sessions, however the data can be flushed to the output port if the incoming messages exceed that limit. 
+All memory is pre-allocated where possible. The serial data is read into 8 pre-allocated buffers, each 256 bytes long. This is sufficient to hold the vast majority of TAP sessions, however the data can be flushed to the output port if the incoming messages exceed that limit. 
 
-Like my other embedded projects, the primary objects exist as singletons in the global scope. Despite the audible gasps from the higher level programmers, the global scope is not polluted with variables and functions as all parameter variables exist in a dedicated namespace, available globally. Additionaly, good OOP practice is used in my classes; Variables are accessed through get/set memebers, and all implementations are private. Modern C++ features such as enum classes (vs. traditional enums) are used wherever appropriate.
+Like my other embedded projects, the primary classes exist as singletons in the global scope. Despite the audible gasps from the higher level programmers, the global scope is not polluted with variables and functions as all parameter variables exist in a dedicated namespace, available globally. Additionaly, good OOP practice is used in my classes; Variables are accessed through get/set memebers, and all implementations are private. Modern C++ features such as enum classes (vs. traditional enums) are used wherever appropriate.
 
-Due to the nature of this project (A commission from my former employer), the source code is closed.
+This project was done by comission for a customer, therefore the source code is closed.
 
 #
 ### MT Wallets Billing Suite - Python/SQLite tenant billing application

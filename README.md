@@ -9,28 +9,25 @@ I wrote all of the python and C++ in this project, assembled the hardware, and t
 
 [Here's a link](https://github.com/Spongeloaf/the-shape-sifter) to the repo.
 
+#
+### NoReset Mod for Art of Rally
+<img src="https://staticdelivery.nexusmods.com/mods/3778/images/5/5-1668961215-1279930720.png">
+I wrote a mod in C# for the game Art of Rally to prevent the car from resetting when you go off ocurse. This allows players to explore terrain of the race course for fun. However the mod causes all events to be counted as DNF, so you cannot cheat the leaderboards by taking shortcuts. Check it out [on GitHub](https://github.com/Spongeloaf/NoResetMod_for_Art_Of_Rally) or [on Nexus Mods](https://www.nexusmods.com/artofrally/mods/5).
+
 # 
-### TAP Dancer - serial protocol converter
+### Hotlink - Univrsal Protocol Converter
 
-The TAP Dancer is a serial protocol converter. It hosts a Serial TAP server, which receives messages from TAP output devices.  The TAP payload is then transmitted as a plain text serial string to any serial input device. The TAP Dancer was intended to run on an Arduino Mega, however it could run on any embedded microcontroller with a C++ compiler and at least two serial ports.
+The Hotlink is a real-time, universal telecommunications protocol converter. It translates messages in real-time from any of its supported protocols to any other. The application currently supports TAP, COMP2, ASM, NEC DMLS, raw text, and more. Any of these can be sent/recevied over TCP, UDP, or serial connections. Support for more protocols is easy and fast to implement. It is intended for use in the telecommunications industry by system integrators where commercial telecomm equipment needs to be integrated with alarm or messing systems. 
 
-All memory is pre-allocated where possible. The serial data is read into 8 pre-allocated buffers, each 256 bytes long. This is sufficient to hold the vast majority of TAP sessions, however the data can be flushed to the output port if the incoming messages exceed that limit. 
+The Hotlink is a commercial product. Therefore the source code is closed. If you're interested in how it was designed, here is brief summary:
 
-Like my other embedded projects, the primary classes exist as singletons in the global scope. Despite the audible gasps from the higher level programmers, the global scope is not polluted with variables and functions as all parameter variables exist in a dedicated namespace, available globally. Additionaly, good OOP practice is used in my classes; Variables are accessed through get/set memebers, and all implementations are private. Modern C++ features such as enum classes (vs. traditional enums) are used wherever appropriate.
-
-This project was done by comission for a customer, therefore the source code is closed.
+Hotlink was written following two primary objectives: Simplictiy and reliability. The application is incredibly light-weight; it sips memeory, doesn't have a UI, needs no database, and runs as a service on Ubuntu and Windows 10/11. It is also very stable. Raw pointers and heap allocation are never used in the application post-startup. While running, all memory is pre-allocated where possible. Where not possible, (network interface buffers, for example) custom allocators are used to prevent memory fragmentation. Raw pointers are not used anywhere in the code, post-startup. Modern C++ features are exploited to keep the code clean and safe.
 
 #
 ### MT Wallets Billing Suite - Python/SQLite tenant billing application
 ![i](https://camo.githubusercontent.com/e67db98fb58c1785eb81ed7c05e3023163ba5179/68747470733a2f2f692e696d6775722e636f6d2f4a3442335132732e706e67)
 
-I wrote the MT Wallets Billing Suite to simplify the process of billing my tenants. The SQLite DB stores utility bills for each month, teneant profiles, and the resultant amounts of each month's utilities divided among the tenants. 
-
-The program has a simple command line interface that is designed to be very quick to use. Once the utility bills and tenant list have been confirmed by the user, the suite will make PDF files and send them via email to the tenants.
+I wrote the MT Wallets Billing Suite to simplify the process of billing my room mates. The SQLite DB stores utility bills for each month, tenant profiles, etc. The program has a simple command line interface for entering each months utility bills. Finally, the program will generate PDF files and send them via email to the tenants.
 
 [Here's a link](https://github.com/Spongeloaf/mt_wallets_billing) to the repo.
 
-#
-### Open Source Contributions
-I recently began contributing to OpenRCT2, an open source re-implementation of Roller Coaster Tycoon 2. 
-[Here's a link](https://github.com/OpenRCT2/OpenRCT2/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3ASpongeloaf+) to my pull requests.

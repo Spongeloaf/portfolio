@@ -12,6 +12,7 @@ I wrote all of the python and C++ in this project, assembled the hardware, and t
 #
 ### NoReset Mod for Art of Rally
 <img src="https://staticdelivery.nexusmods.com/mods/3778/images/5/5-1668961215-1279930720.png">
+
 I wrote a mod in C# for the game Art of Rally to prevent the car from resetting when you go off ocurse. This allows players to explore terrain of the race course for fun. However the mod causes all events to be counted as DNF, so you cannot cheat the leaderboards by taking shortcuts. Check it out [on GitHub](https://github.com/Spongeloaf/NoResetMod_for_Art_Of_Rally) or [on Nexus Mods](https://www.nexusmods.com/artofrally/mods/5).
 
 # 

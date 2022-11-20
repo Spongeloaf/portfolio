@@ -24,7 +24,7 @@ The Hotlink is a commercial product. Therefore the source code is closed. If you
 
 Hotlink was written following two primary objectives: simplictiy and reliability. The application is incredibly light-weight; it sips memory, doesn't have a UI, needs no database, and runs as a service on Ubuntu and Windows 10/11. Raw pointers and heap allocation are never used in the application post-startup. While running, all memory is pre-allocated where possible. Where not possible, (network interface buffers, for example) custom allocators are used to prevent memory fragmentation. Raw pointers are not used anywhere in the code, post-startup. Modern C++ features are exploited to keep the code clean and safe.
 
-It is also very stable. It's been deployed at 6 six commercial sites since 2019, running 24/7 to deliver alarm messages to staff devices. It has not expereicned a single failure, at any site, as of Winter 2022.
+It is also very stable. It's been deployed at six commercial sites since 2019, running 24/7 to deliver alarm messages to staff devices. It has not expereicned a single failure, at any site, as of Winter 2022.
 
 #
 ### MT Wallets Billing Suite - Python/SQLite tenant billing application

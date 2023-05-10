@@ -18,9 +18,9 @@ I wrote a mod in C# for the game Art of Rally to prevent the car from resetting 
 # 
 ### Hotlink - Universal Protocol Converter
 
-The Hotlink is a real-time, universal telecommunications protocol converter. It translates messages in real-time from any of its supported protocols to any other. The application currently supports TAP, COMP2, ASM, NEC DMLS, raw text, and more. Any of these can be sent/recevied over TCP, UDP, or serial connections. Support for more protocols is easy and fast to implement. It is intended for use in the telecommunications industry by system integrators where commercial telecom equipment needs to be integrated with alarm or messaging systems. 
+The Hotlink is a real-time, universal telecommunications protocol converter. It translates messages in real-time from any of its supported protocols to any other. The Hotlink is a commercial product. Therefore the source code is closed.
 
-The Hotlink is a commercial product. Therefore the source code is closed. If you're interested in how it was designed, here is brief summary:
+The application currently supports the following: TAP, COMP2, ASM, NEC DMLS, Spectralink OAI, raw text, and more. Any of these can be sent/recevied over TCP, UDP, or serial connections. Protocols are implemented as abstract modules, making it easy to add new ones. It is intended for use in the telecommunications industry by system integrators where commercial telecom equipment needs to be integrated with alarm or messaging systems. 
 
 Hotlink was written following two primary objectives: simplictiy and reliability. The application is incredibly light-weight; it sips memory, doesn't have a UI, needs no database, and runs as a service on Ubuntu and Windows 10/11. Raw pointers and heap allocation are never used in the application post-startup. While running, all memory is pre-allocated where possible. Where not possible, (network interface buffers, for example) custom allocators are used to prevent memory fragmentation. Raw pointers are not used anywhere in the code, post-startup. Modern C++ features are exploited to keep the code clean and safe.
 

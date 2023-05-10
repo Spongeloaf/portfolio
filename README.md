@@ -1,4 +1,4 @@
-# Spongeloaf's Project Portfolio
+# Peter Vandergragt's Project Portfolio
 
 ### The Shape Sifter - Lego sorting machine 
 ![i](https://camo.githubusercontent.com/75789259a97372c03b6daad6cf308c240ec19da6/68747470733a2f2f692e696d6775722e636f6d2f4c3076664f54372e6a7067)

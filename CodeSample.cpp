@@ -1,3 +1,6 @@
+// This code sample will not compile. It has been stripped of extranouse includes and typedefs
+// for brevity.
+
 // SmartCharArray provides a fixed size container that writes-in data like a stream, but also
 // allows array-like read access. There is an implicit null terminator that is imutable.
 // The temrinaotr is added automatically, making the actual size of SmartArray size_t + 1.

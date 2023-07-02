@@ -66,7 +66,7 @@ public:
 	constexpr const typename std::array<char, _NplusOne>::const_iterator end() const noexcept { return m_buffer.cbegin() + CountElementsToFirstNull(); }
 	constexpr const typename std::array<char, _NplusOne>::const_iterator cbegin() const noexcept { return m_buffer.cbegin(); }
 	constexpr const typename std::array<char, _NplusOne>::const_iterator cend() const noexcept { return m_buffer.cbegin() + CountElementsToFirstNull(); }
-	constexpr const typename std::array<char, _NplusOne>::const_reverse_iterator crbegin() const { return m_buffer.crbegin(); }
+	constexpr const typename std::array<char, _NplusOne>::const_reverse_iterator crbegin() const { return m_buffer.crbegin() + (_NplusOne - CountElementsToFirstNull()); }
 	constexpr const typename std::array<char, _NplusOne>::const_reverse_iterator crend() const { return m_buffer.crend(); }
 
 	// If non null chars exist after the first null, they will be ignored

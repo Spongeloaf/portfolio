@@ -1,7 +1,7 @@
 # Peter Vandergragt's Project Portfolio
 
 ### The Shape Sifter - Lego sorting machine 
-![i](https://camo.githubusercontent.com/75789259a97372c03b6daad6cf308c240ec19da6/68747470733a2f2f692e696d6775722e636f6d2f4c3076664f54372e6a7067)
+![i](https://camo.githubusercontent.com/6c6670914647707889728d89203d7733872142758dccd6ea8cb492499c9ac808/68747470733a2f2f692e696d6775722e636f6d2f4c3076664f54372e6a7067)
 
 The Shape Sifter is a lego sorting machine utilizing a neural network, image processing software, a conveyor belt, and air jets. The software is written in C++ and Python. A desktop PC runs the python program that watches the conveyor belt via a webcam. When a part passes the webcam, the Arduino begins to track it's movement along the conveyor belt. A picture of the part is then passed to a neural network, which classififes it, and assigns it to a bin. Once the part passes in front of the bin, the Arduino activates a pneumatic valve, and blows the part into the bin.
 
